@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.min.css">
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
+  <div class="card">
+    <div class="card__img"><a href="javascript:;"></a></div>
+    <h2 class="card__tit"><a href="javascript:;">Equilibrium #3429</a></h2>
+    <p class="card__desc">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="card__info">
+      <strong class="card__info__eth icon--left">0.041 ETH</strong>
+      <span class="card__info__time icon--left">3 days left</span>
+    </div>
+    <div class="card__line"></div>
+    <div class="card__footer">
+      <div class="card__footer__img"></div>
+      <p class="card__footer__creator">Creation of <a href="javascript:;" class="card__footer__creator-name">Jules Wyvern</a></p>
+    </div>
+  </div>
+  <div class="card__back"></div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Yejin-Han/NFT-preview-card-component" target="_blank">Yejin Han</a>.
   </div>
 </body>
 </html>
